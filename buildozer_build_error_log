@@ -1,0 +1,123 @@
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+Debian `dpkg' package management program version 1.17.5 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-7-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Apache ANT found at /home/kedia-abhishek/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/kedia-abhishek/.buildozer/android/platform/android-sdk-21
+# Android NDK found at /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c
+# Read available permissions from api-versions.xml
+# Check application requirements
+# Run './distribute.sh -l'
+# Cwd /home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android
+Available modules: android apsw audiostream bidi boost cherrypy c_igraph cprotobuf cymunk django docutils ecdsa enum34 evdev ffmpeg ffmpeg2 ffpyplayer freetype gevent greenlet harfbuzz hostpython igraph jpeg kivent_core kivent_cymunk kivy leveldb libevent libpq libsodium libswift libtorrent libxml2 libxslt libyaml lxml m2crypto midistream msgpack mysql_connector netifaces numpy opencv openssl paramiko pil plyer plyvel png polygon protobuf psutil psycopg2 pyasn1 pycrypto pygame pyjnius pylibpd pyopenssl pyparsing pyqrcode python pyyaml sdl setuptools six sqlalchemy sqlite3 storm swift thrift twisted txws wokkel zeroconf zope
+# Application requirements already installed, pass
+# Check garden requirements
+# Compile platform
+# Run './distribute.sh -l'
+# Cwd /home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android
+Available modules: android apsw audiostream bidi boost cherrypy c_igraph cprotobuf cymunk django docutils ecdsa enum34 evdev ffmpeg ffmpeg2 ffpyplayer freetype gevent greenlet harfbuzz hostpython igraph jpeg kivent_core kivent_cymunk kivy leveldb libevent libpq libsodium libswift libtorrent libxml2 libxslt libyaml lxml m2crypto midistream msgpack mysql_connector netifaces numpy opencv openssl paramiko pil plyer plyvel png polygon protobuf psutil psycopg2 pyasn1 pycrypto pygame pyjnius pylibpd pyopenssl pyparsing pyqrcode python pyyaml sdl setuptools six sqlalchemy sqlite3 storm swift thrift twisted txws wokkel zeroconf zope
+# Clean and build python-for-android
+# Remove directory and subdirectory /home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/dist/helloworldapp
+# Run './distribute.sh -m "kivy" -d "helloworldapp"'
+# Cwd /home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android
+Check build dependencies for Ubuntu
+Packages missing: cython 
+It might break the compilation, except if you installed thoses packages manually.
+Check environment
+SDK located at /home/kedia-abhishek/.buildozer/android/platform/android-sdk-21
+NDK located at /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c
+NDK version is r9c
+API level set to 14
+Check NDK location
+Check mandatory tools
+Distribution will be located at /home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/dist/helloworldapp
+Entering in ARM environment
+Compiler found at /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin//arm-linux-androideabi-gcc
+PATH is /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86/bin/:/home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/:/home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c:/home/kedia-abhishek/.buildozer/android/platform/android-sdk-21/tools:/home/kedia-abhishek/.buildozer/android/platform/apache-ant-1.9.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+Leaving ARM environment
+Read kivy recipe
+Module kivy depend on pygame pyjnius android
+Read pygame recipe
+Module pygame depend on python sdl
+Read pyjnius recipe
+Module pyjnius depend on python sdl
+Read android recipe
+Module android depend on pygame
+Read python recipe
+Module python depend on hostpython
+Read sdl recipe
+Module sdl depend on python
+Ignored python, already processed
+Ignored sdl, already processed
+Ignored pygame, already processed
+Read hostpython recipe
+Ignored python, already processed
+Modules changed to hostpython python sdl pygame pyjnius android kivy
+Pure-Python modules changed to 
+Run get packages
+Download package for hostpython
+Module hostpython already downloaded
+Download package for python
+Module python already downloaded
+Download package for sdl
+No package for sdl
+Download package for pygame
+Module pygame already downloaded
+Download package for pyjnius
+Module pyjnius already downloaded
+Download package for android
+No package for android
+Download package for kivy
+Module kivy already downloaded
+Run prebuild
+Call prebuild_hostpython
+Call prebuild_python
+Call prebuild_sdl
+Call prebuild_pygame
+Call prebuild_pyjnius
+Call prebuild_android
+Call prebuild_kivy
+Run build
+Skipped build_hostpython
+Skipped build_python
+Skipped build_sdl
+Call build_pygame
+Entering in ARM environment
+Compiler found at /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin//arm-linux-androideabi-gcc
+running install
+running build
+running build_py
+running build_ext
+building 'pygame.imageext' extension
+arm-linux-androideabi-gcc -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/platforms/android-14/arch-arm -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/kedia-abhishek/.buildozer/android/platform/android-ndk-r9c/platforms/android-14/arch-arm -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/png -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/jpeg -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/sdl/include -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/sdl_mixer -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/sdl_ttf -I/home/kedia-abhishek/Desktop/buildozer/.buildozer/android/platform/python-for-android/src/jni/sdl_image -fPIC -D_REENTRANT -I/usr/include/python2.7 -c src/imageext.c -o build/temp.linux-x86_64-2.7/src/imageext.o
+In file included from /usr/include/python2.7/Python.h:8:0,
+                 from src/pygame.h:75,
+                 from src/imageext.c:47:
+/usr/include/python2.7/pyconfig.h:15:52: fatal error: arm-linux-gnueabi/python2.7/pyconfig.h: No such file or directory
+ #  include <arm-linux-gnueabi/python2.7/pyconfig.h>
+                                                    ^
+compilation terminated.
+error: command 'arm-linux-androideabi-gcc' failed with exit status 1
+# Command failed: ./distribute.sh -m "kivy" -d "helloworldapp"
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
+# In case of a bug report, please add a full log with log_level = 2
